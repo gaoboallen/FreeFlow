@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="msgLabel">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stepLabel">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>20</y>
+      <width>111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>598</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menuChoose_Diffi">
+    <property name="title">
+     <string>Choose Size</string>
+    </property>
+    <addaction name="action5_5"/>
+    <addaction name="action6_6"/>
+    <addaction name="action7_7"/>
+    <addaction name="action8_8"/>
+   </widget>
+   <widget class="QMenu" name="menuReset">
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <addaction name="actionSol"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuChoose_Diffi"/>
+   <addaction name="menuReset"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLoad"/>
+   <addaction name="separator"/>
+   <addaction name="actionWithdraw"/>
+   <addaction name="actionHint"/>
+   <addaction name="actionSol"/>
+   <addaction name="separator"/>
+   <addaction name="actionPre_level"/>
+   <addaction name="actionReset"/>
+   <addaction name="actionNext_level"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/loadfileI.png</normaloff>:/icons/loadfileI.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/closeI.png</normaloff>:/icons/closeI.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;exit&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionSol">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/solution.png</normaloff>:/icons/solution.png</iconset>
+   </property>
+   <property name="text">
+    <string>Solution</string>
+   </property>
+  </action>
+  <action name="action5_5">
+   <property name="text">
+    <string>5*5</string>
+   </property>
+  </action>
+  <action name="action6_6">
+   <property name="text">
+    <string>6*6</string>
+   </property>
+  </action>
+  <action name="action7_7">
+   <property name="text">
+    <string>7*7</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/restartI.png</normaloff>:/icons/restartI.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionPre_level">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/prevI.png</normaloff>:/icons/prevI.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pre level</string>
+   </property>
+  </action>
+  <action name="actionNext_level">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/nextI.png</normaloff>:/icons/nextI.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next level</string>
+   </property>
+  </action>
+  <action name="actionWithdraw">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/withdraw.png</normaloff>:/icons/withdraw.png</iconset>
+   </property>
+   <property name="text">
+    <string>withdraw</string>
+   </property>
+  </action>
+  <action name="actionHint">
+   <property name="icon">
+    <iconset resource="ziyuan.qrc">
+     <normaloff>:/icons/hint.png</normaloff>:/icons/hint.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hint</string>
+   </property>
+  </action>
+  <action name="action8_8">
+   <property name="text">
+    <string>8*8</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ziyuan.qrc"/>
+ </resources>
+ <connections/>
+</ui>

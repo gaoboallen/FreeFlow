@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/nextI.png</file>
+        <file>icons/prevI.png</file>
+        <file>icons/restartI.png</file>
+        <file>icons/closeI.png</file>
+        <file>icons/loadfileI.png</file>
+        <file>icons/addfileI.png</file>
+        <file>icons/withdraw.png</file>
+        <file>icons/solution.png</file>
+        <file>icons/hint.png</file>
+        <file>backgrounds/success_bk.png</file>
+    </qresource>
+</RCC>
